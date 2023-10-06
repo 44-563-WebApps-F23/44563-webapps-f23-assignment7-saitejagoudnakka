@@ -13,61 +13,98 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <style>
         #locations{
-            background-color: orange;
-            border-radius: 7px;
+            background-color: orange; 
+            border-radius: 7px; 
+            margin : auto;
+            padding : 4px; 
+            border: 2px;
         }
+
         #penalty{
             background-color:white ;
+            padding : 8px 0px 0px 0px ;
         }
+
         #help{
             background-color: green;
+            padding : 4px;
             border-radius: 7px;
         }
+
+        .container{
+            display: inline;
+            margin: 10px;
+            
+        }
+       
+        .row{
+            /* display: grid; */
+            grid-template-columns: 210px 210px 210px 210px 210px;
+            margin: 0px;
+            padding: 6px;
+            }
+
+        .col{
+            border: 1px ;
+            padding: 1px;
+            font-size: 2px;
+            text-align: center;
+            margin : 1px;
+            
+        }
+
+
+    #bbb{
+        margin : 10px 10px 10px 10px;
+    }
+ 
     </style>
 </head>
-<body>
-    <h1> "Find the treasure by" Sai Teja Goud</h1>
+<body id = "bbb">
+    <h1> Find the treasure by Sai Teja Goud</h1>
     <div class="container">
-    <p>Click on the locations to search
-        for treasure, beware the traps</p>
+    <p>Click on the locations to search for treasure, beware the traps</p>
         <p id="locations">Number of locations checked is zero.</p>
         <p id="penalty">Penalty is zero.</p>
         <p>Click for help</p>
-        <p id="help">Help report</p>
+        <p id="help">Help Report</p>
+        
         <div class="row">
-            <div class="locations"></div>
-            <div class="locations"></div>
-            <div class="locations"></div>
-            <div class="locations"></div>
-            <div class="locations"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+    </div>
+        <div class="row">
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
         </div>
         <div class="row">
-            <div class="locations"><img src="location1.jpg" alt="location" width="120" height="120"></div>
-            <div class="locations"><img src="location1.jpg" alt="location" width="120" height="120"></div>
-            <div class="locations"><img src="location1.jpg" alt="location" width="120" height="120"></div>
-            <div class="locations"><img src="location1.jpg" alt="location" width="120" height="120"></div>
-            <div class="locations"><img src="location1.jpg" alt="location" width="120" height="120"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            
         </div>
         <div class="row">
-            <div class="locations"><img src="treasure2.jpg" alt="treasure" width="120" height="120"></div>
-            <div class="locations"><img src="treasure2.jpg" alt="treasure"width="120" height="120"></div>
-            <div class="locations"><img src="treasure2.jpg" alt="treasure"width="120" height="120"></div>
-            <div class="locations"><img src="treasure2.jpg" alt="treasure"width="120" height="120"></div>
-            <div class="locations"><img src="treasure2.jpg" alt="treasure"width="120" height="120"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+           
         </div>
         <div class="row">
-            <div class="locations"><img src="trap3.jpg" alt="trap" width="120" height="120"></div>
-            <div class="locations"><img src="trap3.jpg" alt="trap" width="120" height="120"></div>
-            <div class="locations"><img src="trap3.jpg" alt="trap" width="120" height="120"></div>
-            <div class="locations"><img src="trap3.jpg" alt="trap" width="120" height="120"></div>
-            <div class="locations"><img src="trap3.jpg" alt="trap" width="120" height="120"></div>
-        </div>
-        <div class="row">
-            <div class="locations"><img src="pirate4.jpg" alt="pirate" width="120" height="120"></div>
-            <div class="locations"><img src="pirate4.jpg" alt="pirate" width="120" height="120"></div>
-            <div class="locations"><img src="pirate4.jpg" alt="pirate" width="120" height="120"></div>
-            <div class="locations"><img src="pirate4.jpg" alt="pirate" width="120" height="120"></div>
-            <div class="locations"><img src="pirate4.jpg" alt="pirate" width="120" height="120"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
+            <div class="col"><img src="location1.jpg" alt="location" width="200" height="130"></div>
         </div>
     </div>
 
