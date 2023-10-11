@@ -87,6 +87,7 @@
         <p id="help">Help report</p>
     
 </div>
+<button type="button" class="button" onclick="resetGame()"><b>NewGame</b></button>
 <div class="container">
 <div class="row">
   <div class="col">
@@ -222,8 +223,18 @@ else {
 penalty = penalty + 2;
 document.getElementById("penalty").innerHTML = "Penalty is " + penalty + ".";
 document.getElementById("help").innerHTML = result;
-
 }
+function resetGame() {
+            treasureLocation = Math.floor(Math.random() * 25);
+            trapLocation = Math.floor(Math.random() * 25);
+            checkCount = 0
+            penalty = 0
+            document.getElementById("locations").innerHTML = "Number of locations checked is zero";
+            document.getElementById("penalty").innerHTML = "Penalty is zero";
+            for (let i = 0; i < 25; i++) {
+                document.getElementById(ids[i]).src = "location1.jpg";
+            }
+        }
 </script>
 </body>
 </html>
