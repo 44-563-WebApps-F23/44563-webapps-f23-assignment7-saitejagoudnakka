@@ -34,9 +34,10 @@
 		</div>
 	
 	<p> <h3>Press the button to create an new element of type div and then add it to the container</h3></p>
-		<input type ="button" id ="addEnd"  value ="Add end">
+		    <input type ="button" id ="addEnd"  value ="Add end">
         <input type ="button" id ="addFront"  value ="Add Front">
         <input type ="button" id ="remove"  value ="Remove">
+        <button type="button" class="button" onclick="swap()">Swap</button>
 	
 	
 </body>
@@ -67,5 +68,18 @@
             let container = document.querySelector(".flex-container");
             container.insertBefore(newDiv, container.firstChild);
         });
+        function swap() {
+	  let mergerItems = document.getElementsByClassName("merger");
+		let container = document.getElementById("target");
+		let element1 = Math.floor(Math.random() * mergerItems.length);
+		let element2 = Math.floor(Math.random() * mergerItems.length);
+		let firstInnerText = document.getElementsByClassName("merger")[element1];
+		let secondInnerText = document.getElementsByClassName("merger")[element2];
+		if (mergerItems.length > 1) {
+			let temp = firstInnerText.innerHTML;
+			firstInnerText.innerHTML = secondInnerText.innerHTML;
+			secondInnerText.innerHTML = temp;
+		}
+}
 </script>
 </html>	
