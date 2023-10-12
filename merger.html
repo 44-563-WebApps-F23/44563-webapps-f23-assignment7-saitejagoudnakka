@@ -43,14 +43,13 @@
 </body>
 <script>
         document.getElementById("addEnd").addEventListener("click", function () {
-        
         let inputValue = document.getElementById("textInput").value;
         var newDiv = document.createElement("div");
         newDiv.innerHTML = inputValue;
         newDiv.className = "merger";
         document.querySelector(".flex-container").appendChild(newDiv);
     });
-
+    
     document.getElementById("remove").addEventListener("click", function () {
             var mergerItems = document.getElementsByClassName("merger");
             var length = mergerItems.length;
@@ -60,7 +59,7 @@
             }
         });
 
-        document.getElementById("addFront").addEventListener("click", function () {
+        document.getElementById("addFront").addEventListener("click", function () {         
             let inputValue = document.getElementById("textInput").value;
             var newDiv = document.createElement("div");
             newDiv.innerHTML = inputValue;
